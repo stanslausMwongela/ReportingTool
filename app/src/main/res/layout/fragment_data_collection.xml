@@ -1,0 +1,497 @@
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/image1"
+    tools:context="com.prototype.hss.reportingtool.Fragments.DataCollection">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/hssicon" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round"
+            android:text="  Select Partner "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <Spinner
+            android:id="@+id/listpartners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="10dp"
+            android:entries="@array/Partners" />
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listpartners"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round"
+            android:text="@string/SelectDate"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <!--android:onClick="showDatePickerDialog"-->
+        <EditText
+            android:id="@+id/venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/date"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Venue"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Facilitators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/venue"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  Facilitators"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Facilitators"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Facilitator1"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/f2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/f1"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Facilitator2"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/f3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/f2"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Facilitator3"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/f3"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  ActivityContent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/chkc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:checked="true"
+            android:text="@string/chk_content1" />
+
+        <CheckBox
+            android:id="@+id/chkC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkc1"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:text="@string/chk_Content2" />
+
+        <CheckBox
+            android:id="@+id/chkC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkC2"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:text="@string/chk_Content3" />
+
+        <TextView
+            android:id="@+id/objective"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkC3"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  Activity Objective"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/chko1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/objective"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:checked="true"
+            android:text="@string/chk_objective1" />
+
+        <CheckBox
+            android:id="@+id/chko2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chko1"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:text="@string/chk_objective2" />
+
+        <CheckBox
+            android:id="@+id/chko3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chko2"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:text="@string/chk_objective3" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chko3"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  Results"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/chkb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/results"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:checked="true"
+            android:text="@string/chk_result1" />
+
+        <CheckBox
+            android:id="@+id/chkb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkb1"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:text="@string/chk_result2" />
+
+        <CheckBox
+            android:id="@+id/chkb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkb2"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:text="@string/chk_result3" />
+
+        <TextView
+            android:id="@+id/challenges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/chkb3"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  Challenges"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/challenges"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Challenge1"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/c2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/c1"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Challenge2"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/c2"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Challenge3"
+            android:inputType="text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/contributions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/c3"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  PartnerContributions"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/contributions"
+            android:layout_marginTop="15dp"
+            android:hint="@string/PContribution"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p1"
+            android:layout_marginTop="10dp"
+            android:hint="@string/PContribution"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p2"
+            android:layout_marginTop="10dp"
+            android:hint="@string/PContribution"
+            android:inputType="textPersonName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/conclusions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/p3"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/round"
+            android:text="  Overall Assessment"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/o1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/conclusions"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:hint="@string/hintrecommendation"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="10"
+            android:minLines="3"
+            android:scrollbars="vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/o1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round"
+            android:text="@string/Save"
+            android:textAllCaps="false"
+            android:textColor="#FFD700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">HSS Reporting Tool</string>
+    <string name="chk_content1">Content1</string>
+    <string name="chk_Content2">Content2</string>
+    <string name="chk_Content3">Content3</string>
+    <string name="chk_objective1">Objective1</string>
+    <string name="chk_objective2">Objective2</string>
+    <string name="chk_objective3">Objective3</string>
+    <string name="chk_result1">Result1</string>
+    <string name="chk_result2">Result2</string>
+    <string name="chk_result3">Result3</string>
+
+    <string name="SelectPartner">    Select Partner</string>
+    <string name="SelectDate">Select Date</string>
+    <string name="Venue">Venue</string>
+    <string name="Facilitators">     Facilitators</string>
+    <string name="Facilitator1">Facilitator1</string>
+    <string name="Facilitator2">Facilitator2</string>
+    <string name="Facilitator3">Facilitator3</string>
+    <string name="ActivityContent">Activity Content</string>
+    <string name="ActivityObjective">Activity Objective</string>
+    <string name="Results">Results</string>
+    <string name="Challenges">Challenges</string>
+    <string name="Challenge1">Challenge1</string>
+    <string name="Challenge2">Challenge2</string>
+    <string name="Challenge3">Challenge3</string>
+    <string name="PartnerContributions">  Partner Contributions</string>
+    <string name="PContribution">Partner(Name):  Contribution(KES)</string>
+    <string name="Overallassement">Overall Assement/Conclusion</string>
+    <string name="hintrecommendation">a brief overall assessment and recommendation</string>
+    <string name="Save">Save</string>
+    <string name="TagLocation">Tag Location</string>
+
+
+    <string-array name="Partners">
+
+        <item>ECJP</item>
+        <item>Inuka</item>
+        <item>ICDI</item>
+        <!--<item>Continuing</item>-->
+    </string-array>
+
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
